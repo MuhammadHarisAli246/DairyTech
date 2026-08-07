@@ -34,7 +34,7 @@ resource "aws_db_instance" "main" {
   db_subnet_group_name   = aws_db_subnet_group.main.name
   vpc_security_group_ids = [aws_security_group.rds.id]
   multi_az                = false # set true for production once traffic justifies the cost
-  backup_retention_period = 7
+  backup_retention_period = 0
   skip_final_snapshot     = false
   final_snapshot_identifier = "${var.project_name}-db-final"
   deletion_protection     = true
