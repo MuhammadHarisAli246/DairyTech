@@ -1,0 +1,13 @@
+Forgot password error: Error: Connection closed unexpectedly
+    at SMTPConnection._onClose (E:\haris\Web Development\Full Stack\DairyTech\server\node_modules\nodemailer\lib\smtp-connection\index.js:992:34)
+    at SMTPConnection._onSocketClose (E:\haris\Web Development\Full Stack\DairyTech\server\node_modules\nodemailer\lib\smtp-connection\index.js:226:42)
+    at Object.onceWrapper (node:events:633:26)
+    at TLSSocket.emit (node:events:530:35)
+    at node:net:346:12
+    at Socket.done (node:_tls_wrap:650:7)
+    at Object.onceWrapper (node:events:633:26)
+    at Socket.emit (node:events:530:35)
+    at TCP.<anonymous> (node:net:346:12) {
+  code: 'ECONNECTION',
+  command: 'CONN'
+}

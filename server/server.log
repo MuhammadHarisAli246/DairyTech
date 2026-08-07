@@ -1,0 +1,5 @@
+[dotenv@17.2.3] injecting env (15) from .env -- tip: ✅ audit secrets and track compliance: https://dotenvx.com/ops
+MongoDB connected successfully: ac-lacazyl-shard-00-02.wovctl2.mongodb.net / DB: DairyTech
+Daily milk generation completed. Created: 17, Skipped: 0, Failed: 0
+Daily milk generation cron job started for Asia/Karachi
+DairyTech API running on port 5000

@@ -1,0 +1,348 @@
+/* DairyTech Pricing */
+
+.pricing-page {
+    display: grid;
+    gap: 18px
+}
+
+.pricing-heading {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 18px
+}
+
+.pricing-kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: #126b59;
+    font-size: .75rem;
+    font-weight: 850;
+    letter-spacing: .06em;
+    text-transform: uppercase
+}
+
+.pricing-heading h1 {
+    margin-top: 5px;
+    color: #14233a;
+    font-size: clamp(1.8rem, 3vw, 2.35rem);
+    font-weight: 850;
+    line-height: 1.08;
+    letter-spacing: -.04em
+}
+
+.pricing-heading p {
+    margin-top: 7px;
+    color: #66758a;
+    font-size: .9rem
+}
+
+.pricing-refresh-button {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 14px;
+    border: 1px solid #dfe6ef;
+    border-radius: 12px;
+    color: #405067;
+    background: #fff;
+    font-weight: 800;
+    cursor: pointer
+}
+
+.pricing-refresh-button:disabled {
+    opacity: .55
+}
+
+.pricing-spin {
+    animation: pricing-spin .8s linear infinite
+}
+
+@keyframes pricing-spin {
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+.pricing-layout {
+    display: grid;
+    grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+    gap: 16px;
+    max-width: 920px
+}
+
+.current-price-card,
+.pricing-form-card {
+    border: 1px solid #e3e9f1;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0 8px 26px rgba(31, 48, 73, .06)
+}
+
+.current-price-card {
+    display: grid;
+    place-items: center;
+    padding: 34px 24px;
+    text-align: center
+}
+
+.current-price-icon {
+    width: 64px;
+    height: 64px;
+    display: grid;
+    place-items: center;
+    border-radius: 20px;
+    color: #fff;
+    background: linear-gradient(135deg, #198b70, #126b59);
+    box-shadow: 0 12px 28px rgba(18, 107, 89, .24)
+}
+
+.current-price-card>small {
+    margin-top: 18px;
+    color: #718096;
+    font-size: .75rem;
+    font-weight: 800
+}
+
+.current-price-card h2 {
+    display: flex;
+    align-items: flex-start;
+    gap: 7px;
+    margin-top: 8px;
+    color: #08785f;
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: -.05em
+}
+
+.current-price-card h2 span {
+    margin-top: 8px;
+    font-size: 1rem
+}
+
+.current-price-card>p {
+    color: #8794a6;
+    font-size: .78rem
+}
+
+.current-price-date {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-top: 20px;
+    padding: 9px 12px;
+    border-radius: 11px;
+    color: #5f6f84;
+    background: #f5f8fb;
+    font-size: .74rem
+}
+
+.pricing-form-card {
+    padding: 25px
+}
+
+.pricing-form-heading {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #edf1f6
+}
+
+.pricing-form-heading>span {
+    width: 42px;
+    height: 42px;
+    display: grid;
+    place-items: center;
+    border-radius: 13px;
+    color: #2463c7;
+    background: #edf4ff
+}
+
+.pricing-form-heading h2 {
+    color: #14233a;
+    font-size: 1.05rem;
+    font-weight: 850
+}
+
+.pricing-form-heading p {
+    margin-top: 3px;
+    color: #718096;
+    font-size: .75rem
+}
+
+.pricing-form {
+    display: grid;
+    gap: 16px;
+    margin-top: 19px
+}
+
+.pricing-form label>span {
+    display: block;
+    margin-bottom: 7px;
+    color: #526278;
+    font-size: .77rem;
+    font-weight: 800
+}
+
+.pricing-form input {
+    width: 100%;
+    min-height: 48px;
+    padding: 11px 13px;
+    border: 1px solid #dfe6ef;
+    border-radius: 12px;
+    outline: none;
+    color: #14233a;
+    background: #f9fbfd;
+    font-size: .9rem
+}
+
+.pricing-form input:focus {
+    border-color: #159276;
+    box-shadow: 0 0 0 3px rgba(21, 146, 118, .1);
+    background: #fff
+}
+
+.pricing-price-input {
+    position: relative
+}
+
+.pricing-price-input strong {
+    position: absolute;
+    top: 50%;
+    left: 13px;
+    color: #08785f;
+    transform: translateY(-50%)
+}
+
+.pricing-price-input input {
+    padding-left: 42px;
+    font-size: 1.05rem;
+    font-weight: 800
+}
+
+.pricing-submit-button {
+    min-height: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: 0;
+    border-radius: 12px;
+    color: #fff;
+    background: linear-gradient(135deg, #198b70, #126b59);
+    box-shadow: 0 9px 20px rgba(18, 107, 89, .2);
+    font-weight: 850;
+    cursor: pointer
+}
+
+.pricing-submit-button:disabled {
+    opacity: .55;
+    cursor: not-allowed
+}
+
+.pricing-heading-skeleton {
+    width: min(420px, 70%);
+    height: 76px;
+    border-radius: 16px
+}
+
+.pricing-card-skeleton {
+    height: 340px;
+    border-radius: 20px
+}
+
+.customer-summary-grid-three {
+    grid-template-columns: repeat(3, minmax(0, 1fr))
+}
+
+.customer-card-metrics-two {
+    grid-template-columns: repeat(2, minmax(0, 1fr))
+}
+
+@media(max-width:768px) {
+    .pricing-page {
+        gap: 10px
+    }
+
+    .pricing-heading {
+        align-items: flex-start
+    }
+
+    .pricing-heading p {
+        display: none
+    }
+
+    .pricing-heading h1 {
+        font-size: 1.5rem
+    }
+
+    .pricing-kicker {
+        font-size: .64rem
+    }
+
+    .pricing-refresh-button {
+        min-width: 42px;
+        min-height: 42px;
+        padding: 8px
+    }
+
+    .pricing-refresh-button span {
+        display: none
+    }
+
+    .pricing-layout {
+        grid-template-columns: 1fr;
+        gap: 10px
+    }
+
+    .current-price-card {
+        padding: 20px 16px
+    }
+
+    .current-price-icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 16px
+    }
+
+    .current-price-card h2 {
+        font-size: 2.3rem
+    }
+
+    .current-price-date {
+        margin-top: 13px
+    }
+
+    .pricing-form-card {
+        padding: 16px
+    }
+
+    .pricing-form input {
+        font-size: 16px
+    }
+
+    .pricing-submit-button {
+        position: sticky;
+        bottom: calc(var(--mobile-nav-height, 66px) + 8px + env(safe-area-inset-bottom));
+        z-index: 10
+    }
+
+    .customer-summary-grid-three {
+        grid-template-columns: repeat(3, minmax(0, 1fr))
+    }
+}
+
+@media(max-width:390px) {
+    .customer-summary-grid-three .customer-summary-icon {
+        display: none
+    }
+
+    .customer-summary-grid-three .customer-summary-card {
+        justify-content: center;
+        text-align: center
+    }
+}
